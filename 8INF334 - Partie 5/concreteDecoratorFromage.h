@@ -8,6 +8,9 @@ public:
 		this->poutine = poutine;
 	}
 	string Creer() override {
+		return Decorer();
+	}
+	string Decorer() {
 		return Decorator::Creer() + " + Extra Fromage";
 	}
 };
