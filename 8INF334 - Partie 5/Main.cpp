@@ -28,7 +28,7 @@ int main() {
 		decorator.mainDecorator();
 		break;
 	case 3:
-		//mainState();
+		mainState();
 		break;
 	}
 	return 0;

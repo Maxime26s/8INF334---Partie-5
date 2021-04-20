@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Commande.h" />
     <ClInclude Include="concreteDecoratorFromage.h" />
     <ClInclude Include="concreteDecoratorSauce.h" />
     <ClInclude Include="concreteDecoratorSaucisse.h" />
@@ -147,10 +148,13 @@
     <ClInclude Include="Main.h" />
     <ClInclude Include="MainDecorator.h" />
     <ClInclude Include="MainSingleton.h" />
+    <ClInclude Include="MainState.h" />
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="State.h" />
     <ClInclude Include="Poutine.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Commande.cpp" />
     <ClCompile Include="concreteDecoratorFromage.cpp" />
     <ClCompile Include="concreteDecoratorSauce.cpp" />
     <ClCompile Include="concreteDecoratorSaucisse.cpp" />
@@ -159,7 +163,9 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MainDecorator.cpp" />
     <ClCompile Include="MainSingleton.cpp" />
+    <ClCompile Include="MainState.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="State.cpp" />
     <ClCompile Include="Poutine.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
