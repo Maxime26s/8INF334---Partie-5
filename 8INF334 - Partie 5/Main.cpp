@@ -1,6 +1,7 @@
 #include "Main.h"
 int main() {
 	setlocale(LC_CTYPE, "fr-FR");
+	MainDecorator decorator;
 	int choix = -1;
 	do {
 		std::cout <<
@@ -24,7 +25,7 @@ int main() {
 		mainSingleton();
 		break;
 	case 2:
-		//mainDecorator();
+		decorator.mainDecorator();
 		break;
 	case 3:
 		mainState();
