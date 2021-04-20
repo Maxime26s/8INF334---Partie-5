@@ -1,6 +1,7 @@
 #pragma once
-#include "State.h"
 #include <string>
+
+class State;
 
 class Commande
 {
@@ -8,43 +9,30 @@ private:
     State* state_;
     std::string commande = "";
 public:
-    Commande(State* state) : state_(nullptr) {
-        this->setState(state);
-    }
-    ~Commande() {
-        delete state_;
-    }
+    Commande(State* state);
+
+    ~Commande();
 
     void setState(State* state);
+
     void ajouterPoutine(std::string poutine);
+
     void paiementValide();
 
-    std::string CommanderAutrePoutine(std::string poutine) {
-        return state_->CommanderAutrePoutine(poutine);
-    }
+    std::string CommanderAutrePoutine(std::string poutine);
 
-    std::string PassagePaiement() {
-        return state_->PassagePaiement();
-    }
+    std::string PassagePaiement();
 
-    std::string Payer() {
-        return state_->Payer();
-    }
+    std::string Payer();
 
-    std::string Recapitulatif() {
-        return state_->Recapitulatif();
-    }
+    std::string Recapitulatif();
 
-    std::string getRecapitulatif() {
-        return  commande + "\n";
-    }
+    std::string getRecapitulatif();
 
-    std::string Retour() {
-        return state_->Retour();
-    }
+    std::string Retour();
 
-    std::string StateActuel() {
-        return state_->StateActuel();
-    }      
+    std::string StateActuel();
+
+    
 };
 

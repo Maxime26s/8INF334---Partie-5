@@ -152,6 +152,7 @@
     <ClCompile Include="MainSingleton.cpp" />
     <ClCompile Include="MainState.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="State.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,6 +1,5 @@
 #pragma once
 #include <iostream>
-#include "Commande.h"
 #include "State.h"
 
 int mainState();

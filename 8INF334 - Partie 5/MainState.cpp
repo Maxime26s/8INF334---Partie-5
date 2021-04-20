@@ -39,27 +39,5 @@ int mainState()
 
 std::string choixAction()
 {
-	return "Que souhaitez-vous faire?\n1 - Ajouter une poutine à la commande\n2 - Passer au paiement\n3 - Payer\n4 -Afficher le récapitulatif de la commande \n5 - Retour à l'étape précedente\n6 - Afficher l'état actuel de la commande\n7 - Quitter\n";;
-}
-
-
-std::string demanderTexte(std::string question) {
-	std::string temp;
-	std::cout << question << std::endl;
-	std::getline(std::cin, temp);
-	return temp;
-}
-
-int demanderNum(std::string question) {
-	try {
-		std::string temp;
-		std::cout << question << std::endl;
-		std::getline(std::cin, temp);
-		int num = std::stoi(temp);
-		return num;
-	}
-	catch (std::exception e) {
-		std::cout << "Caractère invalide.\n";
-		return -1;
-	}
+	return "Que souhaitez-vous faire?\n1 - Ajouter une poutine à la commande\n2 - Passer au paiement\n3 - Payer\n4 - Afficher le récapitulatif de la commande \n5 - Retour à l'étape précedente\n6 - Afficher l'état actuel de la commande\n7 - Quitter\n";;
 }
