@@ -19,12 +19,12 @@ void Commande::ajouterPoutine(std::string poutine)
     if (commande == "")
         commande = poutine;
     else
-        commande = commande + "+ " + poutine;
+        commande = commande + " + " + poutine;
 }
 
 void Commande::paiementValide()
 {
-    commande = commande + " Paiement validé";
+    commande = commande + ", Paiement validé";
 }
 
 std::string Commande::CommanderAutrePoutine(std::string poutine) {

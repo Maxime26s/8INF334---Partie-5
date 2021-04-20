@@ -39,5 +39,5 @@ int mainState()
 
 std::string choixAction()
 {
-	return "Que souhaitez-vous faire?\n1 - Ajouter une poutine à la commande\n2 - Passer au paiement\n3 - Payer\n4 - Afficher le récapitulatif de la commande \n5 - Retour à l'étape précedente\n6 - Afficher l'état actuel de la commande\n7 - Quitter\n";;
+	return "\n \nQue souhaitez-vous faire?\n1 - Ajouter une poutine à la commande\n2 - Passer au paiement\n3 - Payer\n4 - Afficher le récapitulatif de la commande \n5 - Retour à l'étape précedente\n6 - Afficher l'état actuel de la commande\n7 - Quitter\n";;
 }
